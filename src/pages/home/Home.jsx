@@ -3,9 +3,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
+  const handleDownloadCV = () => {
+    const downloadLink = document.createElement("a");
+    downloadLink.href = "/cv.pdf"; // Ruta al archivo PDF de tu CV
+    downloadLink.download = "YuliamOsorio_CV.pdf"; // Nombre del archivo que se descargará
+    downloadLink.click();
+  };
   return (
     <section className="min-h-screen bg-neutral-950 text-slate-200 flex flex-col items-center justify-center">
-      <div className="w-full max-w-2xl md:max-w-4xl xl:bg-transparent xl:max-w-6xl flex-col gap-y-4 md:flex-row flex items-center justify-between absolute top-10">
+      <div className="w-full max-w-2xl md:max-w-4xl xl:bg-transparent xl:max-w-6xl flex-col gap-y-4 md:flex-row flex items-center justify-between md:fixed top-10">
         <h1 className="text-2xl font-semibold">Yuliam Osorio</h1>
         <ul className="flex gap-8">
           <li className="">
@@ -14,17 +20,16 @@ export const Home = () => {
             </Link>
           </li>
           <li className="">
-            <Link className="cursor-pointer hover:border-b ">Habilidades</Link>
+            <Link to={"/Skills"} className="cursor-pointer hover:border-b ">
+              Habilidades
+            </Link>
           </li>
           <li className="">
             <Link className="cursor-pointer hover:border-b ">Proyectos</Link>
           </li>
-          <li className="">
-            <Link className="cursor-pointer hover:border-b ">Contáctame</Link>
-          </li>
         </ul>
       </div>
-      <div className="max-w-xl h-full w-full space-y-20 pt-20 px-2 md:pt-0 md:px-0 ">
+      <div className="max-w-xl h-full w-full space-y-20 py-16 px-2 md:pt-0 md:px-0 ">
         <div>
           <h2 className="text-5xl font-bold">Yuliam Osorio</h2>
           <p className="text-md text-neutral-400 pl-1 space-y-6">
@@ -76,11 +81,22 @@ export const Home = () => {
               actualmente tengo 3 gatos.
             </p>
           </div>
-          <Link className="flex items-center sm:justify-normal justify-center">
-            <button className="border text-center  border-white px-5 py-2 rounded hover:bg-neutral-950 transition-all duration-500">
-              Contáctame
-            </button>
-          </Link>
+          <div className="flex gap-10 items-center justify-center md:justify-normal">
+            <div className="flex items-center sm:justify-normal justify-center">
+              <Link
+                to={"/Skills"}
+                className="border text-center  border-white px-5 py-2 rounded hover:bg-black transition-all duration-500">
+                Ver más
+              </Link>
+            </div>
+            <div className="flex items-center sm:justify-normal justify-center">
+              <button
+                onClick={handleDownloadCV}
+                className="border text-center  border-white px-5 py-2 rounded hover:bg-black transition-all duration-500">
+                Descargar CV
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
