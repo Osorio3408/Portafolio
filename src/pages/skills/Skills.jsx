@@ -33,17 +33,23 @@ export const Skills = () => {
         <h1 className="text-2xl font-semibold">Yuliam Osorio</h1>
         <ul className="flex gap-8">
           <li className="">
-            <Link to={"/"} className="cursor-pointer hover:border-b">
+            <Link
+              to={"/"}
+              className="cursor-pointer hover:border-b border-purple-800">
               Inicio
             </Link>
           </li>
           <li className="">
-            <Link to={"/skills"} className="cursor-pointer border-b">
+            <Link
+              to={"/skills"}
+              className="cursor-pointer border-b border-purple-800">
               Habilidades
             </Link>
           </li>
           <li className="">
-            <Link className="cursor-pointer hover:border-b">Proyectos</Link>
+            <Link className="cursor-pointer hover:border-b border-purple-800">
+              Proyectos
+            </Link>
           </li>
         </ul>
       </div>
@@ -56,7 +62,7 @@ export const Skills = () => {
             <h3 className="text-2xl font-semibold mt-6 text-slate-200">
               Avanzado
             </h3>
-            <hr />
+            <hr className="to-purple-600 border border-purple-500" />
             <ul className="text-lg text-neutral-300 pl-1 space-y-2 grid grid-cols-2 mt-5">
               {muyBienSkills.map((skill, index) => (
                 <li key={index} className="flex items-start">
@@ -72,7 +78,7 @@ export const Skills = () => {
             <h3 className="text-2xl font-semibold mt-6 text-slate-200">
               Intermedio
             </h3>
-            <hr />
+            <hr className="to-purple-600 border border-purple-500" />
             <ul className="text-lg text-neutral-300 pl-1 space-y-2 grid grid-cols-2 mt-5">
               {regularSkills.map((skill, index) => (
                 <li key={index} className="flex items-start">
@@ -88,7 +94,7 @@ export const Skills = () => {
             <h3 className="text-2xl font-semibold mt-6 text-slate-200">
               Básico
             </h3>
-            <hr />
+            <hr className="to-purple-600 border border-purple-500" />
             <ul className="text-lg text-neutral-300 pl-1 space-y-2 grid grid-cols-2 mt-5">
               {basicoSkills.map((skill, index) => (
                 <li key={index} className="flex items-start">

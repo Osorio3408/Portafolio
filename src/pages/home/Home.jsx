@@ -15,44 +15,60 @@ export const Home = () => {
         <h1 className="text-2xl font-semibold">Yuliam Osorio</h1>
         <ul className="flex gap-8">
           <li className="">
-            <Link to={"/"} className="cursor-pointer border-b ">
+            <Link
+              to={"/"}
+              className="cursor-pointer border-b border-purple-800">
               Inicio
             </Link>
           </li>
           <li className="">
-            <Link to={"/Skills"} className="cursor-pointer hover:border-b ">
+            <Link
+              to={"/Skills"}
+              className="cursor-pointer hover:border-b border-purple-800">
               Habilidades
             </Link>
           </li>
           <li className="">
-            <Link className="cursor-pointer hover:border-b ">Proyectos</Link>
+            <Link className="cursor-pointer hover:border-b border-purple-800">
+              Proyectos
+            </Link>
           </li>
         </ul>
       </div>
       <div className="max-w-xl h-full w-full space-y-20 py-16 px-2 md:pt-0 md:px-0 ">
-        <div>
+        <div className="hover:cursor-pointer">
           <h2 className="text-5xl font-bold">Yuliam Osorio</h2>
-          <p className="text-md text-neutral-400 pl-1 space-y-6">
-            Desarrollador de Sofware | Frontend | Backend
-          </p>
+          <div className="flex flex-row text-md text-purple-300 pl-1">
+            <h3>Software Developer </h3> <span className="mx-2">|</span>
+            <h3>IT Support Technician</h3>
+          </div>
           <div className="pl-1 pt-3 flex gap-5 items-center">
             <Link
               to={"https://www.instagram.com/yosorio34"}
               title="Instagram"
               target="_blank">
-              <Instagram size={18} className="hover:scale-110" />
+              <Instagram
+                size={18}
+                className="hover:scale-110 hover:text-purple-700"
+              />
             </Link>
             <Link
               to={"https://www.linkedin.com/in/yuliam-osorio-574b64264/"}
               title="Linkedin"
               target="_blank">
-              <Linkedin size={18} className="hover:scale-110" />
+              <Linkedin
+                size={18}
+                className="hover:scale-110 hover:text-purple-700"
+              />
             </Link>
             <Link
               to={"https://github.com/Osorio3408"}
               title="GitHub"
               target="_blank">
-              <Github size={18} className="hover:scale-110" />
+              <Github
+                size={18}
+                className="hover:scale-110 hover:text-purple-700"
+              />
             </Link>
           </div>
           <div className="py-10">
@@ -62,37 +78,33 @@ export const Home = () => {
                 {" "}
                 Yuliam Andrey Osorio Puerta
               </span>
-              , un joven que le gusta la tecnologia y en especifico el
-              desarrollo de software.
+              , un joven que le gusta y le apasiona la tecnologia y en
+              especifico el desarrollo de software.
               <br />
               <br />
               Me especifico como desarollador de software tanto en el frontend
               como en el backend, ya que siento una pasión por el desarrollo en
-              ambos pero aun no soy experto para definirme como full stack.
+              ambos sentidos.
               <br />
               <br />
               Me encanta estudiar nuevos temas y aprender algo nuevo cada vez
               que puedo, aun más cuando en el ambito de la tecnologia siempre
               hay cambios y actualizaciones.
               <br />
-              <br />
-              Fuera de la programación, me gusta el deporte, en especifico el
-              baloncesto y la natación. También me encanta los animales y
-              actualmente tengo 3 gatos.
             </p>
           </div>
           <div className="flex gap-10 items-center justify-center md:justify-normal">
             <div className="flex items-center sm:justify-normal justify-center">
               <Link
                 to={"/Skills"}
-                className="border text-center  border-white px-5 py-2 rounded hover:bg-black transition-all duration-500">
+                className="border text-center hover:font-semibold border-purple-500 px-5 py-2 rounded hover:bg-black transition-all duration-500">
                 Ver más
               </Link>
             </div>
             <div className="flex items-center sm:justify-normal justify-center">
               <button
                 onClick={handleDownloadCV}
-                className="border text-center  border-white px-5 py-2 rounded hover:bg-black transition-all duration-500">
+                className="border text-center hover:font-semibold border-purple-500 px-5 py-2 rounded hover:bg-black transition-all duration-500">
                 Descargar CV
               </button>
             </div>
