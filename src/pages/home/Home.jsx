@@ -11,7 +11,7 @@ export const Home = () => {
   };
   return (
     <section className="min-h-screen bg-neutral-950 text-slate-200 flex flex-col items-center">
-      <header className="w-full h-44 max-w-4xl md:max-w-4xl xl:bg-transparent xl:max-w-6xl flex-col gap-y-4 pt-20 md:mt-0 md:flex-row flex items-center justify-between fixed top-0 bg-neutral-950 z-50 ">
+      <header className="w-full h-44 max-w-4xl md:max-w-4xl xl:bg-transparent xl:max-w-6xl flex-col gap-y-4  md:mt-0 md:flex-row flex items-center justify-center fixed top-0 bg-neutral-950 z-50 ">
         <h1 className="text-2xl font-semibold ml-4">Yuliam Osorio</h1>
         <ul className="flex gap-8 mr-4">
           <li>
