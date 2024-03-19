@@ -28,32 +28,32 @@ export const Skills = () => {
   const basicoSkills = skills.filter((skill) => skill.level === "Poco");
 
   return (
-    <section className="min-h-screen bg-neutral-950 text-slate-200 flex flex-col items-center justify-center">
-      <div className="w-full max-w-2xl md:max-w-4xl xl:bg-transparent xl:max-w-6xl flex-col gap-y-4 md:flex-row flex items-center justify-between md:fixed top-10">
-        <h1 className="text-2xl font-semibold">Yuliam Osorio</h1>
-        <ul className="flex gap-8">
-          <li className="">
+    <section className="min-h-screen bg-neutral-950 text-slate-200 flex flex-col items-center">
+      <header className="w-full h-40 max-w-4xl md:max-w-4xl xl:bg-transparent xl:max-w-6xl flex-col gap-y-4 pt-20 md:mt-0 md:flex-row flex items-center justify-between fixed top-0 bg-neutral-950 z-50 ">
+        <h1 className="text-2xl font-semibold ml-4">Yuliam Osorio</h1>
+        <ul className="flex gap-8 mr-4">
+          <li>
             <Link
               to={"/"}
               className="cursor-pointer hover:border-b border-purple-800">
               Inicio
             </Link>
           </li>
-          <li className="">
+          <li>
             <Link
               to={"/skills"}
               className="cursor-pointer border-b border-purple-800">
-              Habilidades
+              Habilidades y Experiencia
             </Link>
           </li>
-          <li className="">
+          <li>
             <Link className="cursor-pointer hover:border-b border-purple-800">
               Proyectos
             </Link>
           </li>
         </ul>
-      </div>
-      <div className="max-w-xl h-full w-full space-y-16 py-16 px-2 md:pt-0 md:px-0 ">
+      </header>
+      <div className="max-w-3xl mt-64 w-full space-y-40 py-16 px-2 md:pt-0 md:px-0 ">
         <div className="">
           <h2 className="text-5xl font-bold mb-12 text-white">
             Mis Habilidades
@@ -105,6 +105,51 @@ export const Skills = () => {
                 </li>
               ))}
             </ul>
+          </div>
+        </div>
+        <div>
+          <h2 className="text-5xl font-bold mb-12 text-white">
+            Mi experiencia
+          </h2>
+          <div className="max-w-4xl mx-auto space-y-8">
+            <div>
+              <h3 className="text-2xl font-semibold mt-6 text-slate-200">
+                Soporte de Sistemas
+              </h3>
+              <hr className="to-purple-600 border border-purple-500" />
+
+              <p className="text-lg text-neutral-300 mt-5">
+                En Colautos Mazda, desempeñé un papel clave como técnico de
+                soporte de TI, proporcionando asistencia técnica a los usuarios
+                de la empresa y manteniendo el funcionamiento eficiente de los
+                equipos y sistemas. Esto incluyó la resolución de problemas, la
+                instalación de software y hardware, y la gestión de la
+                infraestructura de red.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-semibold mt-6 text-slate-200">
+                Desarrollo de Aplicaciones
+              </h3>
+              <hr className="to-purple-600 border border-purple-500" />
+
+              <p className="text-lg text-neutral-300 mt-5">
+                Además, tuve la oportunidad de liderar el desarrollo de dos
+                aplicaciones internas para mejorar la eficiencia y productividad
+                de los procesos empresariales. Utilizando tecnologías como
+                React.js y Node.js, desarrollé soluciones personalizadas que
+                cumplían con los requisitos específicos de la empresa y
+                proporcionaban un valor agregado a las operaciones diarias.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          {" "}
+          <div className="flex items-center sm:justify-normal justify-center">
+            <Link className="border text-center hover:font-semibold border-purple-500 px-5 py-2 rounded hover:bg-black transition-all duration-500">
+              Ver proyectos
+            </Link>
           </div>
         </div>
       </div>

@@ -10,38 +10,48 @@ export const Home = () => {
     downloadLink.click();
   };
   return (
-    <section className="min-h-screen bg-neutral-950 text-slate-200 flex flex-col items-center justify-center">
-      <div className="w-full max-w-2xl md:max-w-4xl xl:bg-transparent xl:max-w-6xl flex-col gap-y-4 md:flex-row flex items-center justify-between md:fixed top-10">
-        <h1 className="text-2xl font-semibold">Yuliam Osorio</h1>
-        <ul className="flex gap-8">
-          <li className="">
+    <section className="min-h-screen bg-neutral-950 text-slate-200 flex flex-col items-center">
+      <header className="w-full h-40 max-w-4xl md:max-w-4xl xl:bg-transparent xl:max-w-6xl flex-col gap-y-4 pt-20 md:mt-0 md:flex-row flex items-center justify-between fixed top-0 bg-neutral-950 z-50 ">
+        <h1 className="text-2xl font-semibold ml-4">Yuliam Osorio</h1>
+        <ul className="flex gap-8 mr-4">
+          <li>
             <Link
               to={"/"}
               className="cursor-pointer border-b border-purple-800">
               Inicio
             </Link>
           </li>
-          <li className="">
+          <li>
             <Link
-              to={"/Skills"}
+              to={"/skills"}
               className="cursor-pointer hover:border-b border-purple-800">
-              Habilidades
+              Habilidades y Experiencia
             </Link>
           </li>
-          <li className="">
+          <li>
             <Link className="cursor-pointer hover:border-b border-purple-800">
               Proyectos
             </Link>
           </li>
         </ul>
-      </div>
-      <div className="max-w-xl h-full w-full space-y-20 py-16 px-2 md:pt-0 md:px-0 ">
+      </header>
+      <div className="max-w-xl mt-64 h-full w-full space-y-20 py-16 px-2 md:pt-0 md:px-0 ">
         <div className="hover:cursor-pointer">
+          <div className="w-36 h-36 rounded-full bg-white">
+            <img
+              src="/osorio.webp"
+              alt=""
+              className="rounded-full w-36 h-36 object-cover"
+            />
+          </div>
           <h2 className="text-5xl font-bold">Yuliam Osorio</h2>
           <div className="flex flex-row text-md text-purple-300 pl-1">
             <h3>Software Developer </h3> <span className="mx-2">|</span>
             <h3>IT Support Technician</h3>
           </div>
+          <p className="text-base ml-1 text-gray-400">
+            yuliamandrey@hotmail.com
+          </p>
           <div className="pl-1 pt-3 flex gap-5 items-center">
             <Link
               to={"https://www.instagram.com/yosorio34"}
