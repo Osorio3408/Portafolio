@@ -11,7 +11,7 @@ export const Skills = () => {
     { name: "TypeScript", level: "Poco" },
     { name: "Next.js", level: "Regular" },
     { name: "Astro", level: "Regular" },
-    { name: "SqlServer", level: "Muy bien" },
+    { name: "Sql", level: "Muy bien" },
     { name: "NoSQL", level: "Regular" },
     { name: "Figma", level: "Regular" },
     { name: "Angular", level: "Poco" },
@@ -29,7 +29,7 @@ export const Skills = () => {
 
   return (
     <section className="min-h-screen bg-neutral-950 text-slate-200 flex flex-col items-center">
-      <header className="w-full h-40 max-w-4xl md:max-w-4xl xl:bg-transparent xl:max-w-6xl flex-col gap-y-4 pt-20 md:mt-0 md:flex-row flex items-center justify-between fixed top-0 bg-neutral-950 z-50 ">
+      <header className="w-full h-44 max-w-4xl md:max-w-4xl xl:bg-transparent xl:max-w-6xl flex-col gap-y-4 pt-20 md:mt-0 md:flex-row flex items-center justify-between fixed top-0 bg-neutral-950 z-50 ">
         <h1 className="text-2xl font-semibold ml-4">Yuliam Osorio</h1>
         <ul className="flex gap-8 mr-4">
           <li>
@@ -53,7 +53,7 @@ export const Skills = () => {
           </li>
         </ul>
       </header>
-      <div className="max-w-3xl mt-64 w-full space-y-40 py-16 px-2 md:pt-0 md:px-0 ">
+      <div className="max-w-3xl mt-64 w-full space-y-40 py-16 px-2 md:pt-0 md:px-1 ">
         <div className="">
           <h2 className="text-5xl font-bold mb-12 text-white">
             Mis Habilidades
