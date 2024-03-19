@@ -10,8 +10,8 @@ export const Home = () => {
     downloadLink.click();
   };
   return (
-    <section className="min-h-screen bg-neutral-950 text-slate-200 flex flex-col items-center">
-      <header className="w-full h-44 max-w-4xl md:max-w-4xl xl:bg-transparent xl:max-w-6xl flex-col gap-y-4  md:mt-0 md:flex-row flex items-center justify-center md:justify-between fixed top-0 bg-neutral-950 z-50 ">
+    <section className="containerr min-h-screen bg-neutral-950 text-slate-200 flex flex-col items-center">
+      <header className="w-full h-32 max-w-4xl md:max-w-4xl xl:bg-transparent xl:max-w-6xl flex-col gap-y-4 md:mt-0 md:flex-row flex items-center justify-center md:justify-between fixed top-0 bg-transparent z-50 ">
         <h1 className="text-2xl font-semibold ml-4">Yuliam Osorio</h1>
         <ul className="flex gap-8 mr-4">
           <li>
@@ -35,9 +35,9 @@ export const Home = () => {
           </li>
         </ul>
       </header>
-      <div className="max-w-xl mt-64 h-full w-full space-y-20 py-16 px-2 md:pt-0 md:px-0 ">
+      <div className="max-w-2xl mt-32 md:mt-60 h-full w-full space-y-20 py-16 px-2 md:pt-0 md:px-0 ">
         <div className="hover:cursor-pointer">
-          <div className="w-36 h-36 rounded-full bg-white">
+          <div className="hover:cursor-default w-36 h-36 rounded-full bg-white">
             <img
               src="/osorio.webp"
               alt=""
