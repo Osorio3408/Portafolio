@@ -31,6 +31,7 @@ export const Home = () => {
           <li>
             <Link
               to={"/"}
+              title="Home"
               className="cursor-pointer border-b border-purple-800">
               Inicio
             </Link>
@@ -38,6 +39,7 @@ export const Home = () => {
           <li>
             <Link
               to={"/skills"}
+              title="Skills"
               className="cursor-pointer hover:border-b border-purple-800">
               Habilidades y Experiencia
             </Link>
@@ -54,7 +56,8 @@ export const Home = () => {
           <div className="hover:cursor-default w-36 h-36 2xl:w-44 2xl:h-44 rounded-full bg-white">
             <img
               src="/osorio.webp"
-              alt=""
+              alt="Yuliam Osorio"
+              title="Foto"
               className="rounded-full w-36 h-36 2xl:w-44 2xl:h-44 object-cover"
             />
           </div>
@@ -138,6 +141,7 @@ export const Home = () => {
             <div className="flex items-center sm:justify-normal justify-center">
               <Link
                 to={"/Skills"}
+                title="Skills"
                 className="border text-center border-purple-800 px-5 py-2 rounded hover:border-2 transition-all duration-75">
                 Ver más
               </Link>
