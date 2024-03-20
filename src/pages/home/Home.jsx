@@ -23,7 +23,7 @@ export const Home = () => {
   };
   return (
     <section className="containerr min-h-screen  text-slate-200 flex flex-col items-center">
-      <header className="w-full h-32 max-w-4xl md:max-w-4xl xl:bg-transparent xl:max-w-6xl flex-col gap-y-4 md:mt-0 md:flex-row flex items-center justify-center md:justify-between fixed top-0 bg-transparent z-50 ">
+      <header className="w-full h-32 max-w-4xl md:max-w-4xl xl:bg-transparent xl:max-w-6xl flex-col gap-y-4 md:mt-0 md:flex-row flex items-center justify-center md:justify-between  bg-transparent z-50 ">
         <h1 className="text-2xl xl:text-3xl 2xl:text-4xl font-semibold ml-4">
           Yuliam Osorio
         </h1>
@@ -49,7 +49,7 @@ export const Home = () => {
           </li>
         </ul>
       </header>
-      <div className="max-w-2xl mt-32 lg:mt-52 2xl:mt-60 h-full w-full space-y-20 py-16 px-2 md:pt-0 md:px-0 ">
+      <div className="max-w-2xl mt-32 h-full w-full space-y-20 py-16 px-2 md:pt-0 md:px-0 ">
         <div className="hover:cursor-pointer">
           <div className="hover:cursor-default w-36 h-36 2xl:w-44 2xl:h-44 rounded-full bg-white">
             <img
@@ -59,14 +59,14 @@ export const Home = () => {
             />
           </div>
           <h2 className="text-3xl md:text-4xl 2xl:text-5xl font-bold">
-            Yuliam Andrey Osorio Puerta{" "}
+            Yuliam Andrey Osorio Puerta
           </h2>
-          <div className="flex flex-row text-md 2xl:text-2xl text-purple-300 pl-1">
+          <div className="flex flex-row text-md md:text-xl 2xl:text-2xl text-purple-300 pl-1">
             <h3>Software Developer </h3> <span className="mx-2">|</span>
             <h3>IT Support Technician</h3>
           </div>
           <div className="flex justify-between mr-5">
-            <p className="text-base 2xl:text-xl ml-1 text-gray-400">
+            <p className="text-base md:text-lg 2xl:text-xl ml-1 text-gray-400">
               yuliamandrey@hotmail.com
             </p>
             <button
