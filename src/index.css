@@ -19,4 +19,5 @@
             var(--color) calc(var(--gap) - var(--line) + 1px),
             var(--color) var(--gap));
     background-size: var(--gap) var(--gap);
+
 }

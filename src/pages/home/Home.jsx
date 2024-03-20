@@ -1,19 +1,33 @@
-import { Facebook, Github, Instagram, Linkedin } from "lucide-react";
-import React from "react";
+import { Github, Instagram, Linkedin, Clipboard } from "lucide-react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export const Home = () => {
   const handleDownloadCV = () => {
     const downloadLink = document.createElement("a");
-    downloadLink.href = "/cv.pdf"; // Ruta al archivo PDF de tu CV
+    downloadLink.href = "/cv.pdf"; // Ruta relativa al archivo PDF en la carpeta `public`
     downloadLink.download = "YuliamOsorio_CV.pdf"; // Nombre del archivo que se descargará
     downloadLink.click();
   };
+
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText("yuliamandrey@hotmail.com");
+    setCopied(true);
+
+    // Después de 3 segundos, restablece el estado para ocultar el mensaje de copia
+    setTimeout(() => {
+      setCopied(false);
+    }, 3000);
+  };
   return (
-    <section className="containerr min-h-screen bg-neutral-950 text-slate-200 flex flex-col items-center">
+    <section className="containerr min-h-screen  text-slate-200 flex flex-col items-center">
       <header className="w-full h-32 max-w-4xl md:max-w-4xl xl:bg-transparent xl:max-w-6xl flex-col gap-y-4 md:mt-0 md:flex-row flex items-center justify-center md:justify-between fixed top-0 bg-transparent z-50 ">
-        <h1 className="text-2xl font-semibold ml-4">Yuliam Osorio</h1>
-        <ul className="flex gap-8 mr-4">
+        <h1 className="text-2xl xl:text-3xl 2xl:text-4xl font-semibold ml-4">
+          Yuliam Osorio
+        </h1>
+        <ul className="flex gap-8 mr-4 xl:text-lg 2xl:text-xl">
           <li>
             <Link
               to={"/"}
@@ -35,30 +49,47 @@ export const Home = () => {
           </li>
         </ul>
       </header>
-      <div className="max-w-2xl mt-32 md:mt-60 h-full w-full space-y-20 py-16 px-2 md:pt-0 md:px-0 ">
+      <div className="max-w-2xl mt-32 lg:mt-52 2xl:mt-60 h-full w-full space-y-20 py-16 px-2 md:pt-0 md:px-0 ">
         <div className="hover:cursor-pointer">
-          <div className="hover:cursor-default w-36 h-36 rounded-full bg-white">
+          <div className="hover:cursor-default w-36 h-36 2xl:w-44 2xl:h-44 rounded-full bg-white">
             <img
               src="/osorio.webp"
               alt=""
-              className="rounded-full w-36 h-36 object-cover"
+              className="rounded-full w-36 h-36 2xl:w-44 2xl:h-44 object-cover"
             />
           </div>
-          <h2 className="text-5xl font-bold">Yuliam Osorio</h2>
-          <div className="flex flex-row text-md text-purple-300 pl-1">
+          <h2 className="text-3xl md:text-4xl 2xl:text-5xl font-bold">
+            Yuliam Andrey Osorio Puerta{" "}
+          </h2>
+          <div className="flex flex-row text-md 2xl:text-2xl text-purple-300 pl-1">
             <h3>Software Developer </h3> <span className="mx-2">|</span>
             <h3>IT Support Technician</h3>
           </div>
-          <p className="text-base ml-1 text-gray-400">
-            yuliamandrey@hotmail.com
-          </p>
+          <div className="flex justify-between mr-5">
+            <p className="text-base 2xl:text-xl ml-1 text-gray-400">
+              yuliamandrey@hotmail.com
+            </p>
+            <button
+              onClick={handleCopy}
+              className="focus:outline-none relative">
+              <Clipboard
+                size={18}
+                className="hover:scale-110 hover:text-purple-700 cursor-pointer"
+              />
+              {copied && (
+                <p className="absolute top-2 -left-4 mt-[-25px] text-purple-500 text-xs font-bold">
+                  Copiado!
+                </p>
+              )}
+            </button>
+          </div>
           <div className="pl-1 pt-3 flex gap-5 items-center">
             <Link
               to={"https://www.instagram.com/yosorio34"}
               title="Instagram"
               target="_blank">
               <Instagram
-                size={18}
+                size={20}
                 className="hover:scale-110 hover:text-purple-700"
               />
             </Link>
@@ -67,7 +98,7 @@ export const Home = () => {
               title="Linkedin"
               target="_blank">
               <Linkedin
-                size={18}
+                size={20}
                 className="hover:scale-110 hover:text-purple-700"
               />
             </Link>
@@ -76,13 +107,13 @@ export const Home = () => {
               title="GitHub"
               target="_blank">
               <Github
-                size={18}
+                size={20}
                 className="hover:scale-110 hover:text-purple-700"
               />
             </Link>
           </div>
           <div className="py-10">
-            <p className=" text-xl font-light text-neutral-300">
+            <p className=" text-xl 2xl:text-2xl font-light text-neutral-300">
               Hola, soy
               <span className="font-semibold">
                 {" "}
@@ -103,18 +134,18 @@ export const Home = () => {
               <br />
             </p>
           </div>
-          <div className="flex gap-10 items-center justify-center md:justify-normal">
+          <div className="flex gap-10 items-center justify-center md:justify-normal text-lg 2xl:text-2xl">
             <div className="flex items-center sm:justify-normal justify-center">
               <Link
                 to={"/Skills"}
-                className="border text-center hover:font-semibold border-purple-500 px-5 py-2 rounded hover:bg-black transition-all duration-500">
+                className="border text-center border-purple-800 px-5 py-2 rounded hover:border-2 transition-all duration-75">
                 Ver más
               </Link>
             </div>
             <div className="flex items-center sm:justify-normal justify-center">
               <button
                 onClick={handleDownloadCV}
-                className="border text-center hover:font-semibold border-purple-500 px-5 py-2 rounded hover:bg-black transition-all duration-500">
+                className="border text-center border-purple-800 px-5 py-2 rounded hover:border-2 transition-all duration-75">
                 Descargar CV
               </button>
             </div>
