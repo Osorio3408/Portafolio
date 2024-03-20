@@ -49,7 +49,7 @@ export const Home = () => {
           </li>
         </ul>
       </header>
-      <div className="max-w-2xl mt-32 h-full w-full space-y-20 py-16 px-2 md:pt-0 md:px-0 ">
+      <div className="max-w-2xl mt-0 md:mt-32 h-full w-full space-y-20 pb-16 pt-5 px-2 md:pt-0 md:px-0 ">
         <div className="hover:cursor-pointer">
           <div className="hover:cursor-default w-36 h-36 2xl:w-44 2xl:h-44 rounded-full bg-white">
             <img
