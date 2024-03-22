@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Index = ({ herramientas, name, description, url }) => {
+export const CardEnterprise = ({ herramientas, name, description, url }) => {
   console.log(herramientas);
   const renderIcono = (nombreIcono) => {
     switch (nombreIcono) {

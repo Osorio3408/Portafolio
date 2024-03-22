@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Index } from "../../Components/CardEnterprise";
+import { CardEnterprise } from "../../Components/CardEnterprise/CardEnterprise";
 
 export const Proyects = () => {
   const proyecto1 = ["React", "Tailwind", "Supabase"];
@@ -38,7 +38,7 @@ export const Proyects = () => {
         <h2 className="text-4xl xl:text-6xl font-bold mb-12 text-white">
           Proyectos
         </h2>
-        <Index
+        <CardEnterprise
           name={"Reportes de seguridad"}
           description={
             "El proyecto Reportes de Seguridad es una aplicación web desarrollada como una herramienta integral para el personal de Recursos Humanos (RH). Su principal objetivo es permitir que los usuarios de la empresa puedan reportar incidentes o riesgos que observen dentro de las instalaciones, facilitando así la comunicación y gestión eficiente de la seguridad en el lugar de trabajo."
@@ -46,7 +46,7 @@ export const Proyects = () => {
           herramientas={proyecto1}
           url={"proyecto1.webp"}
         />
-        <Index
+        <CardEnterprise
           name={"Control de asistencia a eventos"}
           description={
             "El proyecto de Control de Asistencia a Eventos fue concebido con el objetivo de proporcionar a la empresa una herramienta eficiente para gestionar y llevar un registro detallado de la asistencia a cualquier evento interno o reunión corporativa. Esta aplicación permite recopilar información precisa sobre quiénes confirmaron su asistencia y quiénes finalmente participaron."
