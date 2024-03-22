@@ -45,7 +45,9 @@ export const Home = () => {
             </Link>
           </li>
           <li>
-            <Link className="cursor-pointer hover:border-b border-purple-800">
+            <Link
+              to={"/proyects"}
+              className="cursor-pointer hover:border-b border-purple-800">
               Proyectos
             </Link>
           </li>

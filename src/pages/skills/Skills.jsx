@@ -51,7 +51,9 @@ export const Skills = () => {
             </Link>
           </li>
           <li>
-            <Link className="cursor-pointer hover:border-b border-purple-800">
+            <Link
+              to={"/proyects"}
+              className="cursor-pointer hover:border-b border-purple-800">
               Proyectos
             </Link>
           </li>
@@ -151,7 +153,9 @@ export const Skills = () => {
         <div>
           {" "}
           <div className="flex items-center sm:justify-normal justify-center">
-            <Link className="border text-center hover:font-semibold border-purple-500 px-5 py-2 rounded hover:bg-black transition-all duration-500">
+            <Link
+              to={"/proyects"}
+              className="border text-center hover:font-semibold border-purple-500 px-5 py-2 rounded hover:bg-black transition-all duration-500">
               Ver proyectos
             </Link>
           </div>
