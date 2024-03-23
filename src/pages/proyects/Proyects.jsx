@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { CardEnterprise } from "../../Components/CardEnterprise/CardEnterprise";
+import { CardPersonal } from "../../Components/CardPersonal/CardPersonal";
 
 export const Proyects = () => {
   const proyecto1 = ["React", "Tailwind", "Supabase"];
   const proyecto2 = ["React", "NodeJS", "JWT", "Mysql", "Tailwind"];
+  const proyecto3 = ["React", "Tailwind"];
+  const proyecto4 = ["React", "Tailwind", "PWA"];
+  const proyecto6 = ["React", "Bootstrap", "PWA"];
 
   return (
     <section className="containerr min-h-screen bg-neutral-950 text-slate-200 flex flex-col items-center">
@@ -53,6 +57,36 @@ export const Proyects = () => {
           }
           herramientas={proyecto2}
           url={"proyecto2.webp"}
+        />
+        <CardPersonal
+          name={"Administrador de gastos"}
+          description={
+            "El Administrador de Gastos es una aplicación desarrollada utilizando las tecnologías React, Tailwind CSS y React Victory. Está diseñado para proporcionar una solución eficiente para llevar un registro detallado de los gastos y facilitar la contabilidad personal o empresarial."
+          }
+          herramientas={proyecto3}
+          url={"proyecto3.webp"}
+          page={"https://expense-controller.netlify.app/"}
+          code={"https://github.com/Osorio3408/Expense_manager"}
+        />
+        <CardPersonal
+          name={"Galeria de imagines"}
+          description={
+            "La Galería de Imágenes es una aplicación web desarrollada utilizando React y Tailwind CSS, con la capacidad adicional de funcionar como una Progressive Web App (PWA). Integrando la API de Unsplash, permite a los usuarios buscar y visualizar imágenes según sus preferencias. La combinación de tecnologías modernas y la integración de una API externa ofrece una experiencia fluida y personalizada, permitiendo a los usuarios explorar y disfrutar de una amplia variedad de imágenes de manera intuitiva y eficiente."
+          }
+          herramientas={proyecto4}
+          url={"proyecto4.webp"}
+          code={"https://github.com/Osorio3408/Galeria-Imagenes/"}
+          page={"https://galeriaimagenesoneline.netlify.app/"}
+        />
+        <CardPersonal
+          name={"Agenda de contáctos"}
+          description={
+            "La Agenda de Contactos es una aplicación desarrollada en React y Bootstrap, implementando el hook useReducer y el almacenamiento local (localStorage). Además, cuenta con la capacidad de funcionar como una Progressive Web App (PWA). Permite a los usuarios almacenar y gestionar contactos mediante el registro de nombres, apellidos y números telefónicos, proporcionando una solución eficiente y accesible para organizar la información de contacto de manera digital."
+          }
+          herramientas={proyecto6}
+          url={"proyecto6.webp"}
+          code={"https://github.com/Osorio3408/Agenda_Contactos"}
+          page={"https://agenda-yaop.netlify.app/"}
         />
       </div>
     </section>

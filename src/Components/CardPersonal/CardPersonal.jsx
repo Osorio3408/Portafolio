@@ -1,6 +1,15 @@
+import { Code2, Globe } from "lucide-react";
 import React from "react";
+import { Link } from "react-router-dom";
 
-export const CardEnterprise = ({ herramientas, name, description, url }) => {
+export const CardPersonal = ({
+  herramientas,
+  name,
+  description,
+  url,
+  page,
+  code,
+}) => {
   console.log(herramientas);
   const renderIcono = (nombreIcono) => {
     switch (nombreIcono) {
@@ -153,6 +162,26 @@ export const CardEnterprise = ({ herramientas, name, description, url }) => {
           </div>
           <div className="text-center md:text-left">
             <p className="w-[350px] md:w-[470px]">{description}</p>
+          </div>
+          <div className="flex justify-center gap-x-5 pb-4">
+            <Link
+              to={page}
+              target="_blank"
+              className="flex items-center w-max border px-4 py-1 rounded gap-2 hover:border-purple-700">
+              <span>
+                <Globe size={16} />
+              </span>
+              Ver página
+            </Link>
+            <Link
+              to={code}
+              target="_blank"
+              className="flex items-center w-max border px-4 py-1 rounded gap-2 hover:border-purple-700">
+              <span>
+                <Code2 size={16} />
+              </span>
+              Ver Código
+            </Link>
           </div>
         </div>
       </div>
