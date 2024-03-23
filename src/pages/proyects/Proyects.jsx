@@ -69,7 +69,7 @@ export const Proyects = () => {
           code={"https://github.com/Osorio3408/Expense_manager"}
         />
         <CardPersonal
-          name={"Galeria de imagines"}
+          name={"Galeria de imágines"}
           description={
             "La Galería de Imágenes es una aplicación web desarrollada utilizando React y Tailwind CSS, con la capacidad adicional de funcionar como una Progressive Web App (PWA). Integrando la API de Unsplash, permite a los usuarios buscar y visualizar imágenes según sus preferencias. La combinación de tecnologías modernas y la integración de una API externa ofrece una experiencia fluida y personalizada, permitiendo a los usuarios explorar y disfrutar de una amplia variedad de imágenes de manera intuitiva y eficiente."
           }
