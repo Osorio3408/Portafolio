@@ -160,14 +160,14 @@ export const CardPersonal = ({
               );
             })}
           </div>
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left text-lg">
             <p className="w-[350px] md:w-[470px]">{description}</p>
           </div>
           <div className="flex justify-center gap-x-5 pb-4">
             <Link
               to={page}
               target="_blank"
-              className="flex items-center w-max border px-4 py-1 rounded gap-2 hover:border-purple-700">
+              className="flex items-center w-max border px-4 py-1 rounded gap-2 hover:border-purple-700 md:text-lg xl:text-xl">
               <span>
                 <Globe size={16} />
               </span>
@@ -176,7 +176,7 @@ export const CardPersonal = ({
             <Link
               to={code}
               target="_blank"
-              className="flex items-center w-max border px-4 py-1 rounded gap-2 hover:border-purple-700">
+              className="flex items-center w-max border px-4 py-1 rounded gap-2 hover:border-purple-700 md:text-lg xl:text-xl">
               <span>
                 <Code2 size={16} />
               </span>

@@ -151,7 +151,7 @@ export const CardEnterprise = ({ herramientas, name, description, url }) => {
               );
             })}
           </div>
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left text-lg">
             <p className="w-[350px] md:w-[470px]">{description}</p>
           </div>
         </div>
