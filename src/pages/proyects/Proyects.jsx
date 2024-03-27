@@ -9,6 +9,7 @@ export const Proyects = () => {
   const proyecto3 = ["React", "Tailwind"];
   const proyecto4 = ["React", "Tailwind", "PWA"];
   const proyecto6 = ["React", "Bootstrap", "PWA"];
+  const proyecto7 = ["NextJs", "Semantic-ui", "MongoDb"];
 
   return (
     <section className="containerr min-h-screen bg-neutral-950 text-slate-200 flex flex-col items-center">
@@ -87,6 +88,16 @@ export const Proyects = () => {
           url={"proyecto6.webp"}
           code={"https://github.com/Osorio3408/Agenda_Contactos"}
           page={"https://agenda-yaop.netlify.app/"}
+        />
+        <CardPersonal
+          name={"Creador de notas"}
+          description={
+            "El Creador de notas es una aplicación desarrollada con Next.js, Semantic UI y MongoDB, que permite a los usuarios crear, editar y eliminar notas tipo recordatorios. Conectada a una base de datos NoSQL como MongoDB, esta aplicación ofrece una experiencia fluida para gestionar notas de manera eficiente, facilitando la organización y el seguimiento de tareas importantes."
+          }
+          herramientas={proyecto7}
+          url={"proyecto7.webp"}
+          code={"https://github.com/Osorio3408/Proyecto-de-creacion-de-notas"}
+          page={"https://tareas-proyecto.vercel.app/"}
         />
       </div>
     </section>

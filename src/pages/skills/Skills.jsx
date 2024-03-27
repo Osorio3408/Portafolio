@@ -22,6 +22,7 @@ export const Skills = () => {
     { name: "PHP", level: "Poco" },
     { name: "Postman", level: "Muy bien" },
     { name: "Css", level: "Regular" },
+    { name: "Semantic-ui", level: "Regular" },
   ];
 
   // Filtra las habilidades por nivel
