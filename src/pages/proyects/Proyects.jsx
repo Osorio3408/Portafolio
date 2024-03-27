@@ -89,7 +89,6 @@ export const Proyects = () => {
           code={"https://github.com/Osorio3408/Agenda_Contactos"}
           page={"https://agenda-yaop.netlify.app/"}
         />
-        {/*
         <CardPersonal
           name={"Creador de notas"}
           description={
@@ -98,8 +97,8 @@ export const Proyects = () => {
           herramientas={proyecto7}
           url={"proyecto7.webp"}
           code={"https://github.com/Osorio3408/Proyecto-de-creacion-de-notas"}
-          page={"https://tareas-proyecto.vercel.app/"}
-        /> */}
+          page={"https://proyecto-de-creacion-de-notas.vercel.app/"}
+        />
       </div>
     </section>
   );
