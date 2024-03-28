@@ -99,6 +99,16 @@ export const Proyects = () => {
           code={"https://github.com/Osorio3408/Proyecto-de-creacion-de-notas"}
           page={"https://proyecto-de-creacion-de-notas.vercel.app/"}
         />
+        <CardPersonal
+          name={"Tenis Jes"}
+          description={
+            "Tenis Jes un catálogo interactivo que ofrece una amplia gama de productos de moda. Desarrollado con React y Tailwind CSS, esta plataforma permite a los usuarios explorar productos de la tienda de ropa, acceder a información de contacto como redes sociales y ubicación del local, así como filtrar productos por precios y marcas. Con una interfaz intuitiva y funcionalidades de filtrado avanzadas."
+          }
+          herramientas={proyecto3}
+          url={"proyecto8.webp"}
+          code={"https://github.com/Osorio3408/TenisJes/"}
+          page={"https://tenis-jes.netlify.app"}
+        />
       </div>
     </section>
   );
