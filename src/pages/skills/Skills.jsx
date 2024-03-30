@@ -126,10 +126,10 @@ export const Skills = () => {
               <hr className="to-purple-600 border border-purple-500" />
 
               <p className="text-lg xl:text-2xl text-neutral-300 mt-5">
-                En Colautos Mazda, desempeñé un papel clave como técnico de
-                soporte de TI, proporcionando asistencia técnica a los usuarios
-                de la empresa y manteniendo el funcionamiento eficiente de los
-                equipos y sistemas. Esto incluyó la resolución de problemas, la
+                En Mazda, desempeñé un papel clave como técnico de soporte de
+                TI, proporcionando asistencia técnica a los usuarios de la
+                empresa y manteniendo el funcionamiento eficiente de los equipos
+                y sistemas. Esto incluyó la resolución de problemas, la
                 instalación de software y hardware, y la gestión de la
                 infraestructura de red.
               </p>

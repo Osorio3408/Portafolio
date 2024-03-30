@@ -187,7 +187,7 @@ export const CardPersonal = ({
           <h3 className="text-2xl xl:text-4xl font-semibold text-slate-200 text-center mt-4 md:text-left md:mt-0">
             {name}
           </h3>
-          <div className="w-max grid grid-cols-3 xl:grid-cols-5 mx-auto">
+          <div className="w-max grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 mx-auto">
             {herramientas.map((data, i) => {
               return (
                 <div
