@@ -13,21 +13,30 @@ export const Proyects = () => {
 
   // Lista de proyectos
   const proyectos = [
+    // {
+    //   nombre: "Reportes de seguridad",
+    //   herramientas: proyecto1,
+    //   url: "proyecto1.webp",
+    //   type: 1,
+    //   description:
+    //     "El proyecto Reportes de Seguridad es una aplicación web desarrollada como una herramienta integral para el personal de Recursos Humanos (RH). Su principal objetivo es permitir que los usuarios de la empresa puedan reportar incidentes o riesgos que observen dentro de las instalaciones, facilitando así la comunicación y gestión eficiente de la seguridad en el lugar de trabajo.",
+    // },
+    // {
+    //   nombre: "Control de asistencia a eventos",
+    //   herramientas: proyecto2,
+    //   url: "proyecto2.webp",
+    //   type: 1,
+    //   description:
+    //     "El proyecto de Control de Asistencia a Eventos fue concebido con el objetivo de proporcionar a la empresa una herramienta eficiente para gestionar y llevar un registro detallado de la asistencia a cualquier evento interno o reunión corporativa. Esta aplicación permite recopilar información precisa sobre quiénes confirmaron su asistencia y quiénes finalmente participaron.",
+    // },
     {
-      nombre: "Reportes de seguridad",
-      herramientas: proyecto1,
-      url: "proyecto1.webp",
-      type: 1,
-      description:
-        "El proyecto Reportes de Seguridad es una aplicación web desarrollada como una herramienta integral para el personal de Recursos Humanos (RH). Su principal objetivo es permitir que los usuarios de la empresa puedan reportar incidentes o riesgos que observen dentro de las instalaciones, facilitando así la comunicación y gestión eficiente de la seguridad en el lugar de trabajo.",
-    },
-    {
-      nombre: "Control de asistencia a eventos",
+      nombre: "Gestión de asistencia a eventos",
       herramientas: proyecto2,
-      url: "proyecto2.webp",
-      type: 1,
+      url: "proyecto0.webp",
+      code: "https://github.com/Osorio3408/EventManagmentClient",
+      page: "#",
       description:
-        "El proyecto de Control de Asistencia a Eventos fue concebido con el objetivo de proporcionar a la empresa una herramienta eficiente para gestionar y llevar un registro detallado de la asistencia a cualquier evento interno o reunión corporativa. Esta aplicación permite recopilar información precisa sobre quiénes confirmaron su asistencia y quiénes finalmente participaron.",
+        "El proyecto de Gestión de asistencia a eventos fue creado para facilitar la organización y gestión de eventos corporativos. Desarrollado con React, Node.js, Express y MySQL, esta aplicación permite a los usuarios crear eventos, gestionar la asistencia de los participantes y generar informes detallados sobre la asistencia a eventos. Con una interfaz intuitiva y funcionalidades avanzadas, esta aplicación ofrece una solución eficiente para la gestión de eventos corporativos.",
     },
     {
       nombre: "Creador de notas",
