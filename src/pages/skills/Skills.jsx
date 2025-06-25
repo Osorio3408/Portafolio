@@ -32,11 +32,12 @@ export const Skills = () => {
       role: "Auxiliar de Sistemas | Colautos Mazda",
       period: "Abril 2024 - Presente",
       achievements: [
-        "Lideré el desarrollo de 2 aplicaciones internas que mejoraron los procesos operativos en un 30%",
-        "Administré landing pages internas con Javascript y React, mejorando el rendimiento en un 40%",
-        "Coordine reuniones técnicas y capacitaciones para equipos multidisciplinarios",
+        "Lidero el desarrollo de 2 aplicaciones internas que mejoraron los procesos operativos en un 30%",
+        "Administro landing pages internas con Javascript y React, mejorando el rendimiento en un 40%",
+        "Coordino reuniones técnicas y capacitaciones para equipos multidisciplinarios",
+        "Brindo soporte técnico a usuarios internos, resolviendo el 95% de incidencias en menos de 24 horas",
       ],
-      stack: ["React", "Node.js", "MySQL", "TailwindCSS"],
+      stack: ["React", "Node.js", "MySQL", "TailwindCSS", "Git", "Soluciones Empresariales"],
     },
     {
       role: "Pasantías en Desarrollo | Colautos Mazda",

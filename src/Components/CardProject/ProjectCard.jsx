@@ -4,7 +4,7 @@ export const ProjectCard = ({ project }) => {
       <img
         src={`${project.image}`}
         alt={project.title}
-        className="w-full h-48 object-cover"
+        className="w-full h-52 object-cover"
       />
 
       <div className="p-6 flex-1 flex flex-col">
@@ -59,14 +59,16 @@ export const ProjectCard = ({ project }) => {
               Ver Demo
             </a>
           )}
-          <a
-            href={project.codeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 border border-purple-600 hover:bg-purple-600/10 rounded text-sm flex-1 text-center"
-          >
-            Código
-          </a>
+         {project.codeUrl !== "#" && (
+            <a
+              href={project.codeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-purple-600 hover:bg-purple-700 rounded text-sm flex-1 text-center"
+            >
+              Código
+            </a>
+          )}
         </div>
       </div>
     </article>

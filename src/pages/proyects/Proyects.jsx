@@ -6,12 +6,30 @@ export const Proyects = () => {
   // Datos mejor estructurados con métricas de impacto
   const projects = [
     {
+      id: 0,
+      title: "Sistema de Inspecciones Preoperacionales",
+      tags: ["Full Stack", "Solución Empresarial"],
+      tech: ["React", "Node.js", "Express", "MySQL", "Tailwind"],
+      image: "/proyecto1.webp", // Asegúrate de que la imagen no muestre datos reales
+      codeUrl: "#", // Si no es público, deja "#" o comenta el motivo
+      liveUrl: "#",
+      description: "Plataforma digital para gestionar inspecciones técnicas de equipos en talleres, reemplazando formularios físicos y centralizando datos para el equipo de SST.",
+      features: [
+        "Flujo de inspección en 3 áreas críticas: Alistamiento, Colisión y Mecánica",
+        "Checklist dinámico para +42 tipos de equipos (ej: hidrolavadoras, balanceadoras)",
+        "Reportes automáticos con hallazgos para mantenimiento preventivo",
+        "Notificaciones en tiempo real para equipos con fallos detectados",
+      ],
+      results:
+        "Optimización del 60% en el tiempo de registro de inspecciones (320+ mensuales). Reducción de errores en datos vs. método manual. Adoptado por el equipo de SST y jefes de taller para garantizar seguridad operativa.",
+    },
+    {
       id: 1,
       title: "Gestión de Asistencia a Eventos",
       tags: ["Full Stack", "Solución Empresarial"],
       tech: ["React", "Node.js", "Express", "MySQL", "Tailwind"],
       image: "/proyecto0.webp",
-      codeUrl: "https://github.com/Osorio3408/EventManagmentClient",
+      codeUrl: "#",
       liveUrl: "#",
       description: "Sistema integral para gestión corporativa de eventos con:",
       features: [
@@ -41,7 +59,7 @@ export const Proyects = () => {
     {
       id: 3,
       title: "Administrador Financiero",
-      tags: ["Fintech", "Visualización"],
+      tags: ["Frontend"],
       tech: ["React", "Tailwind CSS", "React Victory"],
       image: "/proyecto3.webp",
       liveUrl: "https://expense-controller.netlify.app/",
